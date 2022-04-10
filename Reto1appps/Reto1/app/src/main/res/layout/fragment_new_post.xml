@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Spinner
+        android:id="@+id/spinnerCities"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="64dp"
+        android:contentDescription="@string/spinner_cities"
+        android:entries="@array/array_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageNewPost" />
+
+    <ImageView
+        android:id="@+id/imageNewPost"
+        android:layout_width="256dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+    <Button
+        android:id="@+id/btn_galery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/galer_a"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/btnCamera"
+        app:layout_constraintTop_toBottomOf="@+id/imageNewPost" />
+
+    <Button
+        android:id="@+id/btnNewPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="@string/publicar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/c_mara"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageNewPost" />
+
+    <EditText
+        android:id="@+id/textDescription"
+        android:layout_width="274dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="64dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Caption"
+        android:inputType="textMultiLine"
+        android:maxHeight="256dp"
+        android:minHeight="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageNewPost" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

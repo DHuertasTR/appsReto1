@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeItem"
+        android:icon="@drawable/baseline_home_black_24dp"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/postItem"
+        android:icon="@drawable/baseline_library_add_black_24dp"
+        android:title="@string/publicationTemplate" />
+    <item
+        android:id="@+id/profileItem"
+        android:icon="@drawable/baseline_account_circle_black_24dp"
+        android:title="@string/profile" />
+</menu>
